@@ -169,22 +169,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper presents a comprehensive study of Meta Prompting, an innovative technique reshaping
-            the utilization of large language models (LLMs), multi-modal foundation models, and AI systems
-            in problem-solving and data interaction. Grounded in type theory and category theory, Meta
-            Prompting emphasizes the structure and syntax of information over traditional content-centric
-            methods. The paper explores the formal definitions of Meta Prompting (MP), sets it apart from
-            Few-Shot Prompting, and underlines its effectiveness in various AI applications. A key focus
-            is applying Meta Prompting for complex reasoning (MP-CR) tasks, showing how it effectively
-            deconstructs intricate problems into simpler sub-problems, enhancing token efficiency, and enabling
-            more equitable problem-solving comparisons, especially against few-shot prompting methods.
-            Additionally, the paper introduces Meta Prompting for prompting tasks, allowing LLMs to self-generate new prompts in a recursive, metaprogramming-like manner. The paper also introduces the
-            integration of Meta Prompting into multi-modal foundation model settings, tackling the challenges
-            and opportunities of incorporating varied data types such as images, audio, and video within the
-            structured Meta Prompting framework. Empirical experiments, including solving the Game of 24
-            tasks with 100% success rate, demonstrate the MP-CR Agent’s enhanced reasoning capabilities,
-            achieving high accuracy and efficiency, and showcasing Meta Prompting’s transformative impact
-            on AI problem-solving. 
+          In this work, we present a comprehensive study of Meta Prompting (MP), an innovative technique reshaping
+          the utilization of large language models (LLMs) and AI systems in problem-solving and data interaction. 
+          Grounded in type theory and category theory, Meta Prompting emphasizes the structure and syntax of information 
+          over traditional content-centric methods. The paper explores the formal definitions of Meta Prompting, sets 
+          it apart from few-shot prompting, and underlines its effectiveness in various AI applications. A key focus
+          is applying Meta Prompting for complex reasoning tasks, showing how it effectively deconstructs intricate 
+          problems into simpler sub-problems, enhancing token efficiency, and enabling more equitable problem-solving 
+          comparisons, especially against few-shot prompting methods. Additionally, the paper introduces Meta Prompting
+          for prompting tasks, allowing LLMs to self-generate new prompts in a recursive, metaprogramming-like manner. 
+          Empirical experiments, including using a Qwen-72B base language model equipped with meta prompt without instruction-tuning 
+          to solve MATH problems with accuracy at 46.3\%, which surpass the supervised fine-tuned counterpart trained with extensive mathematical 
+            QA instruction pairs and even the initial version of GPT-4, solving GSM8K problems with 83.5\% accuracy with zero-shot 
+            meta-prompted Qwen-72B base language model, and solving the Game of 24 tasks with a 100\% success rate using GPT-4, demonstrate 
+            the meta prompting's efficacy in achieving high accuracy and efficiency, showcasing Meta Prompting's transformative 
+            impact on AI problem-solving.
           </p>
         </div>
       </div>
@@ -202,7 +201,17 @@
         <h2 class="title is-3">Meta Prompting</h2>
         <div class="content has-text-justified">
           <p>
-            Meta Prompting (General Definition): Meta Prompting is a prompting technique inspired by type theory, emphasizing the structure and syntax of examples rather than their detailed content. It's an approach where the focus is on presenting the outline or framework of a problem or topic, offering a scaffold that can be filled with specific details as needed. This technique is particularly useful in situations where understanding the form and pattern of a problem or solution is more crucial than the specific content.
+            Meta Prompting is an advanced prompting technique that focuses on the structural 
+            and syntactical aspects of problems, prioritizing the general format and pattern over specific content details. 
+            It aims to construct a more abstract, structured approach to interacting with large language models (LLMs), emphasizing
+            the structure and syntax of information. This technique is particularly effective in contexts where the underlying pattern 
+            or framework of a problem is crucial for understanding or solving it.         
+          </p>
+          <p>
+            <b> Definition </b> A Meta Prompt is an example-agnostic structured prompt designed to capture the reasoning structure of a 
+            specific category of tasks. It provides a scaffold that outlines the general approach to a problem, enabling LLMs to fill 
+            in specific details as needed. This approach allows for more efficient and targeted use of LLM capabilities by focusing 
+            on the "how" of problem-solving rather than the "what".
           </p>
         </div>
 
@@ -222,19 +231,19 @@
 
         <div class="content has-text-justified">
           <p>
-            1. <b>Syntax-Oriented:</b> The emphasis is on the form and structure of the prompt. The syntax acts as a template or a guide that outlines how a response or solution should be structured.          
+            <b>Syntax-Oriented:</b> Meta Prompting prioritizes the form and structure over the content, using syntax as a guiding template for the expected response or solution.          
           </p>
           <p>
-            2. <b>Abstract-Example-Based:</b> Abstracted examples are employed to demonstrate the structure, though they are not elaborated in the content. These examples act as frameworks for inserting specific details.
+            <b>Abstract-Example-Based:</b> It employs abstracted examples as frameworks, illustrating the structure of problems and solutions without focusing on specific content. 
           </p>
           <p>
-            3. <b>Type Theory Inspiration:</b> Drawing from type theory, this approach focuses on the types or categories of components in a prompt, such as problem statements, solution steps, or conclusions, and how they are logically organized. 
+            <b>Type Theory Inspiration:</b> Drawing from type theory, Meta Prompting emphasizes the categorization of components in a prompt, such as problem statements, solution steps, or conclusions. It focuses on their logical arrangement and interrelationships, ensuring a coherent and structured approach to problem-solving. 
           </p>
           <p>
-            4. <b>Adaptability:</b> The approach is adaptable to various domains, from mathematical problem-solving to creative writing, where the structure of the response is a key element.
+            <b>Adaptability:</b> Meta Prompting is versatile, applicable across various domains, and capable of providing structured responses to a wide range of problems. 
           </p>
           <p>
-            5. <b>Guidance for Detailed Exploration:</b> While it does not delve into specifics, Meta Prompting provides a clear pathway for detailed exploration, guiding users on how to approach and structure their deep dive into the topic.
+            <b>Guidance for Detailed Exploration:</b> It provides a clear roadmap for problem-solving, focusing on structural patterns to aid in navigating complex topics. 
           </p>
         </div>
 
