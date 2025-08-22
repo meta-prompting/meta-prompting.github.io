@@ -75,7 +75,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="MP.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2311.11482" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -170,7 +170,6 @@
         <div class="content has-text-justified">
           <p>
           We introduce <b>Meta Prompting</b>, a framework that elevates the reasoning capabilities of large language models (LLMs) by focusing on the formal structure of a task rather than content-specific examples. We establish a theoretical foundation for this paradigm, formalizing MP as a functor that maps a category of tasks to a category of structured prompts, thereby guaranteeing that compositional problem-solving strategies can be systematically decomposed into modular prompt structures. We extend this concept to Recursive Meta Prompting (RMP), an automated process where an LLM can generate and refine its own prompts. We model this self-improvement loop formally as a monad, providing a principled framework for automated prompt engineering. Our claims are validated through extensive experiments demonstrating that a Qwen-72B base model, guided by a single, example-agnostic meta-prompt, achieves state-of-the-art results on MATH, GSM8K, and Game of 24. These results are achieved with substantial token efficiency gains over traditional few-shot methods.
-            The code is available at https://github.com/meta-prompting/meta-prompting.
           </p>
         </div>
       </div>
@@ -188,16 +187,10 @@
         <h2 class="title is-3">Meta Prompting</h2>
         <div class="content has-text-justified">
           <p>
-            Meta Prompting is a prompting technique that emphasizes the structural and syntactical aspects of problems by prioritizing the
-            overall format and pattern over specific content details. This method constructs an abstract and structured approach to 
-            interacting with large language models (LLMs), placing emphasis on the form and syntax of information. Such an approach is
-            particularly effective in scenarios where recognizing the underlying framework of a problem is crucial for its resolution.        
+            Meta Prompting is a prompting technique that emphasizes the structural and syntactical aspects of problems by prioritizing the overall format and pattern over specific content details. This method constructs an abstract and structured approach to interacting with large language models (LLMs), placing emphasis on the form and syntax of information. Such an approach is particularly effective in scenarios where recognizing the underlying framework of a problem is crucial for its resolution.
           </p>
           <p>
-            <b> Definition. </b> A <b>Meta Prompt</b> is an example-agnostic structured prompt designed to capture the reasoning structure
-            of a specific category of tasks. It provides a scaffold that outlines the general approach to a problem, thereby enabling LLMs 
-            to fill in task-specific details as needed. This methodology focuses on the procedural aspects of problem-solving—the <b>how</b>—rather
-            than the content-specific details—the <b>what</b>.
+            <b> Definition of Meta Prompt. </b> A Meta Prompt is an example-agnostic structured prompt designed to capture the reasoning structure of a specific category of tasks. It provides a scaffold that outlines the general approach to a problem, thereby enabling LLMs to fill in task-specific details as needed. This methodology focuses on the procedural aspects of problem-solving—the \emph{how}—rather than the content-specific details—the \emph{what}.
           </p>
         </div>
 
